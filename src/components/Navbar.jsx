@@ -1,44 +1,49 @@
 import React from 'react'
+import './styles.css';
+import Arrow from "../assets/p2.png"
+import phone from "../assets/Vector.png"
+import clock from "../assets/p3.png"
+import logo from "../assets/image 1 (1).png"
 
 const Navbar = () => {
   return (
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="/">Action</a></li>
-            <li><a class="dropdown-item" href="/">Another action</a></li>
-            <li><hr class="dropdown-divider" /></li>
-            <li><a class="dropdown-item" href="/">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="/" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+    <div className=' fluid-container'>
+      <div className='preNav d-flex justify-content-between '>
+      <div className="left d-flex align-items-center">
+        <div className='inner-left'>
+        <img src={Arrow} alt="" />
+        <span>xample@example.com</span>
+        </div>
+        <div className='inner-right'>
+        <img src={phone} alt="" />
+        <span>605-646-9841</span>
+        </div>
+      </div>
+      <div className='right '>
+        <img src={clock} alt="" />
+        <span>8:00 AM until 6:00 PM</span>
+
+      </div>
+      </div>
+      <div className='main-nav d-flex justify-content-between'>
+        <div className='main-logo'>
+      <img src={logo} alt="" />
+        </div>
+        <div className="main-middle d-flex ">
+          <li className='home'>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Contact us</li>
+        </div>
+        <div className="main-button">
+          <button>
+            <a href="/" >Register /</a>
+            <a href="/"> sign in</a>
+          </button>
+        </div>
+      </div>
     </div>
-  </div>
-</nav>
   )
 }
 
