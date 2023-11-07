@@ -1,9 +1,9 @@
 import React from 'react'
-import './styles.css';
-import Arrow from "../assets/p2.png"
-import phone from "../assets/Vector.png"
-import clock from "../assets/p3.png"
-import logo from "../assets/image 1 (1).png"
+import '../Navbar/styles.css';
+import Arrow from "../../assets/p2.png"
+import phone from "../../assets/Vector.png"
+import clock from "../../assets/p3.png"
+import logo from "../../assets/image 1 (1).png"
 
 const Navbar = () => {
   return (
