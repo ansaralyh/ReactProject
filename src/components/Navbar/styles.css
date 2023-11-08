@@ -1,7 +1,9 @@
  * {
    list-style: none;
  }
-
+a{
+  text-decoration: none;
+}
  img {
    height: 17px;
    width: 20px;
@@ -78,12 +80,17 @@
    line-height: 16.94px;
    font-size: 14px;
  }
-
- .main-middle {
-   gap: 34px;
+ .main-middle{
+  display: flex;
+  gap: 34px;
+ }
+ .main-middle a{
+ 
+  color: #000000;
+ 
  }
 
- .home {
+ .home a{
    color: #D10400;
  }
 
