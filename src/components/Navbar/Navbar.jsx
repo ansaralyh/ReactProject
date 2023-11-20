@@ -4,6 +4,7 @@ import Arrow from "../../assets/p2.png"
 import phone from "../../assets/Vector.png"
 import clock from "../../assets/p3.png"
 import logo from "../../assets/image 1 (1).png"
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -28,13 +29,14 @@ const Navbar = () => {
       </div>
       <div className='main-nav d-flex justify-content-between'>
         <div className='main-logo'>
-      <img src={logo} alt="" />
+      <Link to="/"><img src={logo} alt="" /></Link>
         </div>
         <div className="main-middle d-flex ">
-          <li className='home'>Home</li>
-          <li>About</li>
-          <li>Services</li>
-          <li>Contact us</li>
+          <li className='home'><Link to="/">Home</Link></li>
+          <li><Link to="/About">About</Link></li>
+          <li><Link to="/Services">Services</Link></li>
+          <li><Link to="/Contact">Contact us</Link></li>
+          <li><Link to="/Products">Products</Link></li>
         </div>
         <div className="main-button">
           <button>
